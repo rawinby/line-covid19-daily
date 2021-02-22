@@ -1,0 +1,47 @@
+#menu_mobile {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    z-index: 5;
+    width: 100%;
+
+    ul.menu_mobile {
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+        background-color: #4E844A;
+
+        li {
+            list-style: none;
+            float: left;
+            width: 16.6666667%;
+            display: table;
+
+
+            a.menu_mobile_link {
+                text-decoration: none;
+                display: table-cell;
+                vertical-align: middle;
+                height: 60px;
+                text-align: center;
+
+                img.image_menu {
+                    margin: 0 auto;
+                    height: 25px;
+                }
+
+                p.text_menu {
+                    color: #fff;
+                    font-size: 10px;
+                    line-height: 8px;
+                }
+
+
+                &.-active_menu_mobile {
+                    background-color: #6fad47;
+                }
+
+            }
+        }
+    }
+}

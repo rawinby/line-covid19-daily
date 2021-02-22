@@ -1,0 +1,476 @@
+{
+  "geoserver_url": "http://159.138.102.154:8080/geoserver/ecolandscape/ows",
+  "data_layer": [
+    {
+      "group_code": "group01",
+      "group_name": "การวิเคราะห์และประเมินผล",
+      "group_layer": [
+        {
+          "layer_name": "ผังภูมินิเวศ",
+          "service_name": "ecolandscape:01ภูมินิเวศ",
+          "service_style": "01ภูมินิเวศ",
+          "service_type": "polygon"
+        },
+        {
+          "layer_name": "ภูมินิเวศเชิงกายภาพ",
+          "service_name": "ecolandscape:01ภูมินิเวศเชิงกายภาพ",
+          "service_style": "01ภูมินิเวศเชิงกายภาพ",
+          "service_type": "polygon"
+        },
+        {
+          "layer_name": "ภูมินิเวศเชิงวัฒนธรรม",
+          "service_name": "ecolandscape:01ภูมินิเวศเชิงวัฒนธรรม",
+          "service_style": "default",
+          "service_type": "polygon",
+          "layer_empty": true
+        }
+      ]
+    },
+    {
+      "group_code": "group101",
+      "group_name": "ผังการจัดการภูมินิเวศเชิงวัฒนธรรม",
+      "group_layer": [
+        {
+          "layer_name": "เขตชุมชนที่มีความเป็นอัตลักษณ์และโดดเด่น",
+          "service_name": "ecolandscape:101เขตชุมชนที่มีความเป็นอัตลักษณ์และโดดเด่นด้านชาติพันธุ์",
+          "service_style": "101point",
+          "service_type": "point"
+        },
+        {
+          "layer_name": "พื้นที่โครงการในพระราชดำริ",
+          "service_name": "ecolandscape:101พื้นที่โครงการในพระราชดำริ",
+          "service_style": "101โครงการในพระราชดำริ",
+          "service_type": "polygon"
+        },
+        {
+          "layer_name": "แหล่งธรรมชาติอันควรอนุรักษ์",
+          "service_name": "ecolandscape:101แหล่งธรรมชาติอันควรอนุรักษ์",
+          "service_style": "101point",
+          "service_type": "point"
+        },
+        {
+          "layer_name": "แหล่งโบราณสถาน",
+          "service_name": "ecolandscape:101แหล่งโบราณสถาน",
+          "service_style": "101point",
+          "service_type": "point"
+        },
+        {
+          "layer_name": "แหล่งสำรวจที่พบนกอพยพ",
+          "service_name": "ecolandscape:101แหล่งสำรวจที่พบนกอพยพ",
+          "service_style": "101point",
+          "service_type": "point"
+        },
+        {
+          "layer_name": "พื้นที่ชุ่มน้ำระดับประเทศ",
+          "service_name": "ecolandscape:101พื้นที่ชุ่มน้ำระดับประเทศ",
+          "service_style": "101พื้นที่ชุ่มน้ำ",
+          "service_type": "polygon"
+        },
+        {
+          "layer_name": "พื้นที่ป่าอนุรักษ์",
+          "service_name": "ecolandscape:101พื้นที่ป่าอนุรักษ์",
+          "service_style": "101พื้นที่ป่าอนุรักษ์",
+          "service_type": "polygon"
+        },
+        {
+          "layer_name": "แหล่งอนุรักษ์และอ้างอิงด้านธรณีวิทยา",
+          "service_name": "ecolandscape:101แหล่งอนุรักษ์และอ้างอิงด้านธรณีวิทยา",
+          "service_style": "101point",
+          "service_type": "point"
+        },
+        {
+          "layer_name": "เขตเมืองเก่า",
+          "service_name": "ecolandscape:101เขตเมืองเก่า",
+          "service_style": "101เขตเมืองเก่า",
+          "service_type": "polygon"
+        },
+        {
+          "layer_name": "บริเวณศูนย์กลางการเกิดแผ่นดินไหวในรอบ 50 ปี",
+          "service_name": "ecolandscape:101บริเวณศูนย์กลางการเกิดแผ่นดินไหวในรอบ20ปี",
+          "service_style": "101point",
+          "service_type": "point"
+        },
+        {
+          "layer_name": "แนวรอยเลื่อน",
+          "service_name": "ecolandscape:101แนวรอยเลื่อน",
+          "service_style": "101แนวรอยเลื่อน",
+          "service_type": "line"
+        }
+      ]
+    },
+    {
+      "group_code": "group02",
+      "group_name": "ข้อมูลการวิเคราะห์ภูมินิเวศ",
+      "group_layer": [
+        {
+          "layer_name": "พื้นที่ต้นน้ำลำธารที่ต้องทำการฟื้นฟู",
+          "service_name": "ecolandscape:02พื้นที่ต้นน้ำสาธารณะที่ต้องทำการฟื้นฟู",
+          "service_style": "02พื้นที่ต้นน้ำสาธารณะ",
+          "service_type": "polygon"
+        },
+        {
+          "layer_name": "พื้นที่ที่มีการใช้ดินไม่เหมาะสม",
+          "service_name": "ecolandscape:02พื้นที่ที่มีการใช้ดินไม่เหมาะสม",
+          "service_style": "default",
+          "service_type": "polygon"
+        }
+      ]
+    },
+    {
+      "group_code": "group03",
+      "group_name": "ชุดข้อมูลพื้นฐาน",
+      "group_layer": [
+        {
+          "layer_name": "ขอบเขตจังหวัด",
+          "service_name": "ecolandscape:03province",
+          "service_style": "province",
+          "service_type": "polygon",
+          "default_checked": true
+        },
+        {
+          "layer_name": "ขอบเขตการปกครอง",
+          "service_name": "ecolandscape:01ขอบเขตการปกครอง",
+          "service_style": "01ขอบเขตการปกครอง",
+          "service_type": "polygon"
+        },
+        {
+          "layer_name": "ที่ตั้งหมู่บ้าน",
+          "service_name": "ecolandscape:03ที่ตั้งหมู่บ้าน",
+          "service_style": "default",
+          "service_type": "point"
+        }
+      ]
+    },
+    {
+      "group_code": "group04",
+      "group_name": "ชุดข้อมูลด้านทรัพยากรธรรมชาติ",
+      "group_layer": [
+        {
+          "layer_name": "แหล่งน้ำ",
+          "service_name": "ecolandscape:04แหล่งน้ำ",
+          "service_style": "default",
+          "service_type": "polygon",
+          "layer_empty": true
+        },
+        {
+          "layer_name": "เส้นทางน้ำ",
+          "service_name": "ecolandscape:04เส้นทางน้ำ",
+          "service_style": "04เส้นทางน้ำ",
+          "service_type": "line"
+        },
+        {
+          "layer_name": "ชั้นน้ำบาดาล",
+          "service_name": "ecolandscape:04ชั้นน้ำบาดาล",
+          "service_style": "04ชั้นน้ำบาดาล",
+          "service_type": "polygon"
+        },
+        {
+          "layer_name": "ศักยภาพน้ำบาดาล",
+          "service_name": "ecolandscape:04ศักยภาพน้ำบาดาล",
+          "service_style": "default",
+          "service_type": "polygon",
+          "layer_empty": true
+        },
+        {
+          "layer_name": "เขตอุทยานแห่งชาติ",
+          "service_name": "ecolandscape:04เขตอุทยานแห่งชาติ",
+          "service_style": "04เขตอุทยานแห่งชาติ",
+          "service_type": "polygon"
+        },
+        {
+          "layer_name": "เขตวนอุทยาน",
+          "service_name": "ecolandscape:04เขตวนอุทยาน",
+          "service_style": "04เขตวนอุทยาน",
+          "service_type": "polygon"
+        },
+        {
+          "layer_name": "เขตรักษาพันธุ์สัตว์ป่า",
+          "service_name": "ecolandscape:04เขตรักษาพันธุ์สัตว์ป่า",
+          "service_style": "04เขตรักษาพันธุ์สัตว์ป่า",
+          "service_type": "polygon"
+        },
+        {
+          "layer_name": "เขตห้ามล่าสัตว์ป่า",
+          "service_name": "ecolandscape:04เขตห้ามล่าสัตว์ป่า",
+          "service_style": "04เขตห้ามล่าสัตว์ป่า",
+          "service_type": "polygon"
+        },
+        {
+          "layer_name": "ชุดดิน",
+          "service_name": "ecolandscape:04ชุดดิน",
+          "service_style": "default",
+          "service_type": "polygon",
+          "layer_empty": true
+        },
+        {
+          "layer_name": "กลุ่มดิน",
+          "service_name": "ecolandscape:04กลุ่มชุดดิน",
+          "service_style": "default",
+          "service_type": "polygon",
+          "layer_empty": true
+        }
+      ]
+    },
+    {
+      "group_code": "group05",
+      "group_name": "ชุดข้อมูลด้านสิ่งแวดล้อม",
+      "group_layer": [
+        {
+          "layer_name": "ข้อมูลการจัดการขยะ",
+          "service_name": "ecolandscape:05ข้อมูลการจัดการขยะ",
+          "service_style": "05ข้อมูลการจัดการขยะ",
+          "service_type": "point"
+        },
+        {
+          "layer_name": "ข้อมูลการจัดการน้ำเสีย",
+          "service_name": "ecolandscape:05ข้อมูลการจัดการน้ำเสีย",
+          "service_style": "05ข้อมูลการจัดการน้ำเสีย",
+          "service_type": "point"
+        },
+        {
+          "layer_name": "ข้อมูลคุณภาพน้ำในแหล่งน้ำ",
+          "service_name": "ecolandscape:05ข้อมูลคุณภาพน้ำในแหล่งน้ำ",
+          "service_style": "default",
+          "service_type": "point",
+          "layer_empty": true
+        },
+        {
+          "layer_name": "ข้อมูลคุณภาพอากาศ",
+          "service_name": "ecolandscape:05ข้อมูลคุณภาพอากาศ",
+          "service_style": "default",
+          "service_type": "point",
+          "layer_empty": true
+        },
+        {
+          "layer_name": "ข้อมูลการจัดการกากของเสียอันตรายและขยะติดเชื้อ",
+          "service_name": "ecolandscape:05ข้อมูลการจัดการกากของเสียอันตรายและขยะติดเชื้อ",
+          "service_style": "default",
+          "service_type": "point",
+          "layer_empty": true
+        },
+        {
+          "layer_name": "ข้อมูลพื้นที่สีเขียว",
+          "service_name": "ecolandscape:05ข้อมูลพื้นที่สีเขียว",
+          "service_style": "default",
+          "service_type": "point"
+        }
+      ]
+    },
+    {
+      "group_code": "group06",
+      "group_name": "ชุดข้อมูลสถานภาพและการใช้ประโยชน์ที่ดิน",
+      "group_layer": [
+        {
+          "layer_name": "การใช้ประโยชน์ที่ดิน",
+          "service_name": "ecolandscape:06การใช้ประโยชน์ที่ดิน",
+          "service_style": "default",
+          "service_type": "polygon",
+          "layer_empty": true
+        },
+        {
+          "layer_name": "การตั้งถิ่นฐานของชุมชนและท้องถิ่น",
+          "service_name": "ecolandscape:06การตั้งถิ่นฐานของชุมชนและท้องถิ่น",
+          "service_style": "default",
+          "service_type": "point",
+          "layer_empty": true
+        },
+        {
+          "layer_name": "ขอบเขตเมือง",
+          "service_name": "ecolandscape:06ขอบเขตเมือง",
+          "service_style": "default",
+          "service_type": "polygon",
+          "layer_empty": true
+        },
+        {
+          "layer_name": "เขตชั้นคุณภาพลุ่มน้ำ",
+          "service_name": "ecolandscape:06เขตชั้นคุณภาพลุ่มน้ำ",
+          "service_style": "06เขตชั้นคุณภาพลุ่มน้ำ",
+          "service_type": "polygon"
+        },
+        {
+          "layer_name": "การใช้ประโยชน์ที่ดินป่าไม้",
+          "service_name": "ecolandscape:06เขตการใช้ประโยชน์ที่ดินป่าไม้",
+          "service_style": "06การใช้ประโยชน์ที่ดินป่าไม้",
+          "service_type": "polygon"
+        },
+        {
+          "layer_name": "เขตลุ่มน้ำหลัก",
+          "service_name": "ecolandscape:06เขตลุ่มน้ำหลัก",
+          "service_style": "06เขตลุ่มน้ำหลัก",
+          "service_type": "polygon"
+        },
+        {
+          "layer_name": "เขตลุ่มน้ำย่อย",
+          "service_name": "ecolandscape:sbasin",
+          "service_style": "sbasin",
+          "service_type": "polygon"
+        }
+      ]
+    },
+    {
+      "group_code": "group07",
+      "group_name": "ชุดข้อมูลชพื้นที่ประสบภัยพิบัตทางธรรมชาติ",
+      "group_layer": [
+        {
+          "layer_name": "พื้นที่เสี่ยงภัยกับหลุมยุบ",
+          "service_name": "ecolandscape:07พื้นที่เสี่ยงภัยกับหลุมยุบ",
+          "service_style": "07พื้นที่เสี่ยงภัยกับหลุมยุบ",
+          "service_type": "polygon"
+        },
+        {
+          "layer_name": "พื้นที่เสี่ยงภัยน้ำท่วม",
+          "service_name": "ecolandscape:07พื้นที่เสี่ยงภัยน้ำท่วม",
+          "service_style": "07พื้นที่เสี่ยงภัยน้ำท่วม",
+          "service_type": "polygon"
+        },
+        {
+          "layer_name": "พื้นที่เสี่ยงภัยแล้ง",
+          "service_name": "ecolandscape:07พื้นที่เสี่ยงภัยแล้ง",
+          "service_style": "07พื้นที่เสี่ยงภัยแล้ง",
+          "service_type": "polygon"
+        },
+        {
+          "layer_name": "พื้นที่เสี่ยงภัยแผ่นดินไหว",
+          "service_name": "ecolandscape:07พื้นที่เสี่ยงภัยแผ่นดิวไหว",
+          "service_style": "07พื้นที่เสี่ยงภัยแผ่นดินไหว",
+          "service_type": "polygon"
+        },
+        {
+          "layer_name": "พื้นที่เสี่ยงภัยดินถล่ม",
+          "service_name": "ecolandscape:07พื้นที่เสี่ยงภัยดินถล่ม",
+          "service_style": "default",
+          "service_type": "",
+          "layer_empty": true
+        }
+      ]
+    },
+    {
+      "group_code": "group08",
+      "group_name": "ชุดข้อมูลประวัติศาสตร์ เอกลักษณ์ และอัตลักษณ์วัฒนธรรม",
+      "group_layer": [
+        {
+          "layer_name": "เมืองโบราณ",
+          "service_name": "ecolandscape:08เมืองโบราณ",
+          "service_style": "08point",
+          "service_type": "point"
+        },
+        {
+          "layer_name": "ชุมชนโบราณ",
+          "service_name": "ecolandscape:08ชุมชนโบราณ",
+          "service_style": "08point",
+          "service_type": "point"
+        },
+        {
+          "layer_name": "เตาเผาโบราณ",
+          "service_name": "ecolandscape:08เตาเผาโบราณ",
+          "service_style": "default",
+          "service_type": "point",
+          "layer_empty": true
+        },
+        {
+          "layer_name": "อนุสาวรีย์",
+          "service_name": "ecolandscape:08อนุสาวรีย์",
+          "service_style": "08point",
+          "service_type": "point"
+        },
+        {
+          "layer_name": "หลักเมือง",
+          "service_name": "ecolandscape:08หลักเมือง",
+          "service_style": "08point",
+          "service_type": "point"
+        },
+        {
+          "layer_name": "แหล่งสถาปัตยกรรม",
+          "service_name": "ecolandscape:08แหล่งสถาปัตยกรรม",
+          "service_style": "default",
+          "service_type": "point",
+          "layer_empty": true
+        },
+        {
+          "layer_name": "ศาสนสถาน วัด วัดร้าง",
+          "service_name": "ecolandscape:08ศาสนสถานวัดวัดร้าง",
+          "service_style": "08point",
+          "service_type": "point"
+        },
+        {
+          "layer_name": "พิพิธภัณฑ์",
+          "service_name": "ecolandscape:08พิพิธภัณฑ์",
+          "service_style": "08point",
+          "service_type": "point"
+        },
+        {
+          "layer_name": "โบราณวัตถุ",
+          "service_name": "ecolandscape:08โบราณวัตถุ",
+          "service_style": "default",
+          "service_type": "point",
+          "layer_empty": true
+        }
+      ]
+    },
+    {
+      "group_code": "group09",
+      "group_name": "ชุดข้อมูลอื่น ๆ ที่เกี่ยวข้อง",
+      "group_layer": [
+        {
+          "layer_name": "เส้นทางคมนาคม",
+          "service_name": "ecolandscape:09เส้นทางคมนาคม",
+          "service_style": "default",
+          "service_type": "line",
+          "layer_empty": true
+        },
+        {
+          "layer_name": "เขตเศรษฐกิจพิเศษ",
+          "service_name": "ecolandscape:09เขตเศรษฐกิจพิเศษ",
+          "service_style": "09เขตเศรษฐกิจพิเศษ",
+          "service_type": "polygon"
+        },
+        {
+          "layer_name": "ทางรถไฟ",
+          "service_name": "ecolandscape:09เส้นทางรถไฟ",
+          "service_style": "09เส้นทางรถไฟ",
+          "service_type": "line"
+        },
+        {
+          "layer_name": "ท่าอากาศยาน",
+          "service_name": "ecolandscape:09ท่าอากาศยาน",
+          "service_style": "09ท่าอากาศยาน",
+          "service_type": "point"
+        },
+        {
+          "layer_name": "เขตพัฒนาอุตสาหกรรม",
+          "service_name": "ecolandscape:09เขตพัฒนาอุตสาหกรรม",
+          "service_style": "default",
+          "service_type": "polygon",
+          "layer_empty": true
+        }
+      ]
+    },
+    {
+      "group_code": "group10",
+      "group_name": "ชั้นข้อมูลสำรอง",
+      "group_layer": [
+        {
+          "layer_name": "ชั้นข้อมูล01",
+          "service_name": "ecolandscape:10ชั้นข้อมูล01",
+          "service_style": "ชั้นข้อมูล01",
+          "service_type": "",
+          "layer_empty": true
+        },
+        {
+          "layer_name": "ชั้นข้อมูล02",
+          "service_name": "ecolandscape:10ชั้นข้อมูล02",
+          "service_style": "ชั้นข้อมูล02",
+          "service_type": "",
+          "layer_empty": true
+        },
+        {
+          "layer_name": "ชั้นข้อมูล03",
+          "service_name": "ecolandscape:10ชั้นข้อมูล03",
+          "service_style": "ชั้นข้อมูล03",
+          "service_type": "",
+          "layer_empty": true
+        }
+      ]
+    }
+  ]
+}

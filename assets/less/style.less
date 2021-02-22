@@ -1,0 +1,304 @@
+html,
+body {
+    width: 100%;
+    height: 100%
+}
+
+body {
+    // font-family: Helvetica;
+    font-family: kanit;
+    font-size: 14px;
+    color: #232323;
+}
+
+.hide, .hidden{
+    display: none !important;
+}
+
+a {
+    cursor: pointer;
+    color: #000;
+}
+
+a:hover {
+    text-decoration: none;
+    color: #007bff;
+}
+
+.navbar-top {
+    padding: 0.3rem 0.7rem;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.04);
+    &.navbar-light{
+        background-color: #59B27A;
+    }
+    .navbar-brand{
+        padding-top: 0;
+        padding-bottom: 0;
+        .img-logo{
+            @logo_width: 40px;
+            width: @logo_width;
+            height: @logo_width;
+        }
+        .text {
+            font-size: 1.00rem;
+            margin-top: 0px;
+            // color: #076dbf;
+            color: #FFF;
+            font-weight: bold;
+            padding-top: 9px;
+            display: inline-block;
+        }
+    }
+}
+
+
+.form-control{
+    border-radius: 0 !important;
+}
+
+.content {
+    width: 100%;
+    height: ~"calc(100% - 49px)";
+    /* border: solid 1px #F00; */
+}
+
+.row-c {
+    height: 100%;
+    .col-c {
+        height: 100%;
+    }
+}
+
+.col1 {
+    display: flex;
+    left: 0px;
+    flex: 0 0 350px;
+    max-width: 350px;
+    padding: 0px;
+    .col-menuleft {
+        flex: 0 0 50px;
+        max-width: 50px;
+        height: 100%;
+        //background-color: #076dbf;
+        background-color: #2F2F2F;
+        text-align: center;
+        padding: 10px 5px;
+
+        .menu-left {
+            padding: 7px 5px;
+            display: inline-block;
+            text-align: center;
+            width: 100%;
+        }
+
+        /* https://material.io/resources/icons/?search=layer&icon=layers&style=baseline */
+        .menu-left .material-icons {
+            color: #fff;
+            opacity: 0.4;
+        }
+
+        .menu-left.active .material-icons,
+        .menu-left:hover .material-icons {
+            opacity: 1;
+        }
+
+    }
+
+
+    .col-sidebar {
+        width: 350px;
+        height: 100%;
+        padding: 0px;
+        overflow: hidden;
+        
+        .sidebar-tab{
+            display: none;
+            &.active{
+                display: block;
+            }
+            &.tab2{
+                padding: 5px;
+            }
+        }
+
+        .layers-title{
+            padding: 7px 5px 7px 15px;
+            background-color: #ebebeb;
+            border-bottom: solid 1px #ccc;
+        }
+    
+        .layers-body{
+            padding: 5px;
+            overflow-x: hidden;
+            overflow-y: auto;
+        }
+    
+        .card{
+            border-radius: 0px;
+            border: unset;
+            .card-header{
+                background-color: unset;
+                padding: 5px 0px 1px;
+                border-bottom: unset;
+                display: flex;
+    
+                .btn-link{
+                    padding: 0px 5px;
+                    height: 24px;
+                }
+    
+                .icon-collapse{
+                    font-size: 18px;
+                    margin-top: 2px;
+                    color: #166DBF;
+                }
+                [aria-expanded="true"] .icon-collapse::before{ // -
+                    // content: "\f146";
+                    content: "\f07c";
+                }
+                [aria-expanded="false"] .icon-collapse::before{// +
+                    // content: "\f0fe";
+                    content: "\f65e";
+                }
+            }
+            .card-body{
+                padding: 2px 2px 2px 50px;
+    
+                .chk-dl:checked + label {
+                    color: #1A7BFF;
+                }
+            }
+            .custom-control-label{
+                cursor: pointer;
+            }
+            .custom-control-label::before{
+                border-radius: 0px;
+            }
+        }
+
+
+        .show-map-type{
+            padding: 7px;
+        }
+
+    }
+
+}
+
+.col2 {
+    flex: 0 0 ~"calc(100% - 350px)";
+    max-width: ~"calc(100% - 350px)";
+    padding: 0px;
+
+    .col-map {
+        display: flex;
+        padding: 0px;
+
+        #map-content{
+            position: relative;
+            // width: ~"calc(100% - 350px)";
+            width: 100%;
+            height: 100%;
+            #map {
+                width: 100%;
+                height: 100%;
+                background-color: #f1f1f1;
+
+                .ol-control{
+                    button{
+                                
+                        &.active{
+                            background-color: #00F;
+                            border: none;     
+                        }                    
+                    }
+                }
+            }
+        }
+
+        #show-table-data{
+            display: none;
+            height: 30%;
+            background-color: #f1f1f1;
+            padding: 5px;
+            .nav-link {
+                display: block;
+                padding: .1rem 0.5rem;
+                .close{
+                    font-size: 16px;
+                    margin-top: 2px;
+                    margin-left: 4px;
+                }
+            }
+            .tab-content{
+                padding: 4px;
+                background-color: #fff;
+                font-size: 12px;
+                overflow-x: auto;
+                overflow-y: auto;
+            }
+            .table-responsive{
+                background-color: #FFF;
+                .table th, .table td{
+                    padding: 1px .25rem !important;
+                    font-size: 12px;
+                    a:hover{
+                        color: #00f;
+                    }
+                }
+            }
+            .data-empty{
+                padding: 40px 20px 10px;
+                text-align: center;
+            }
+        }
+        
+    }
+
+}
+
+input[type="number"]::-webkit-outer-spin-button, 
+input[type="number"]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+input[type="number"] {
+    -moz-appearance: textfield;
+}
+
+
+
+
+.box {
+    min-width: 160px;
+    border: solid 1px #fff;
+    margin: 5px;
+    padding: 20px;
+    border-radius: 15px;
+    text-align: center;
+
+    .title {
+        font-size: 20px;
+    }
+    .num {
+        font-weight: bold;
+        font-size: 25px;        
+    }
+    .sub_num {
+        font-size: 15px;  
+        color:#00f;      
+    }
+}
+
+.box1 {
+    background-color: #FDD955;
+}
+.box2 {
+    background-color: #F26F61;
+}
+.box3 {
+    background-color: #69C6FF;
+}
+.box4 {
+    background-color: #38D68B;
+}

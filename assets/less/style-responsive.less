@@ -1,0 +1,87 @@
+/* // Small devices (phones, 767px) */
+@media (max-width: 767px) {
+
+    .navbar-brand{
+        .text{
+            width: 210px;
+            display: inline-block;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+            overflow: hidden;
+            font-size: 14px;
+        }
+    }
+
+    .preload2{
+        right: 72px;
+    }
+
+    body{
+        overflow: hidden;
+    }
+
+    .col1{
+        position: absolute;
+        background-color: #FFF;
+        z-index: 10;
+
+        flex: 0 0 300px !important;
+        max-width: 300px !important;
+        display: none; 
+        left: -300px;
+
+        .col-menuleft{
+            flex: 0 0 40px !important;
+            max-width: 40px !important;
+            .menu-left{
+                padding:0px !important;
+            }
+        }
+    }
+
+    .col2{
+        width: 100%;
+        max-width: 100% !important;
+        flex: 0 0 ~"calc(100%)" !important;
+        .col-map {
+            display: block;
+            .col-sidebar{
+                //
+            }
+        }
+    }
+
+    .ol-home{
+        top: 5.4em;
+    }
+
+    .ol-zoomout {
+        left: 3.2em;
+    }
+
+    .ol-b1 {
+        left: 6em;
+    }
+
+    .ol-b2 {
+        left: 8.7em;
+    }
+
+    .ol-b3 {
+        left: 11.5em;
+    }
+
+    .ol-b4 {
+        left: 14.2em;
+    }
+
+
+    .mobile-open-menuleft.active{
+        background-color: rgba(0,60,136,.5);
+    }
+
+    .menu-print{
+        display: none !important;
+    }
+
+}

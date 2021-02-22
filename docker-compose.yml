@@ -1,0 +1,25 @@
+version: "3"
+
+# https://hub.docker.com/r/francarmona/docker-ubuntu16-apache2-php7-mssql_client/
+# services:
+#     zerowaste:
+#         image: francarmona/docker-ubuntu16-apache2-php7-mssql_client
+#         container_name: zw
+#         hostname: zerowaste
+#         domainname: zerowaste.dev
+#         ports:
+#         - "8090:80"
+#         volumes:
+#         - ./:/var/www
+
+# https://hub.docker.com/r/normisg/docker-laravel-sqlsrv-php72/dockerfile
+services:
+    zerowaste:
+        image: normisg/docker-laravel-sqlsrv-php72
+        container_name: covid19
+        hostname: covid19
+        domainname: covid19.dev
+        ports:
+        - "8092:80"
+        volumes:
+        - ./:/var/www/public

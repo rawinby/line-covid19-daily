@@ -1,0 +1,836 @@
+@media only screen and (max-width: 768px) {
+    #menu_laptop {
+        display: none;
+    }
+
+    #menu_mobile {
+        display: block;
+    }
+
+    nav.topnav {
+        padding: 0;
+    }
+
+    .user_info_mobile {
+
+        right: 15px;
+
+    }
+
+    .columns.is-reverse-mobile {
+        &.is-mobile {
+            flex-direction: column-reverse;
+            display: flex; // .is-mobile gives this too
+
+            .column {
+                // we want width to be 100%, this gives us the power of flex's ordering.
+                // ux behavior is same as before, except underneath the hood width fills
+                // 100% of the column instead of dropping flex in mobile
+                width: 100%;
+            }
+        }
+    }
+
+    .btn_user_info {
+        height: 30px;
+        line-height: 30px;
+        width: 100%;
+        font-size: 12px;
+        border-radius: 20px;
+    }
+
+    .container {
+        padding: 0 15px;
+    }
+
+    .logo {
+        width: 90%;
+        margin: 0;
+    }
+
+    nav.topnav {
+        .topnav_left {
+            display: none;
+        }
+
+        .topnav_right {
+            width: 100%;
+            float: initial;
+            text-align: center;
+        }
+
+        ul.contact {
+            text-align: left;
+
+            li.topnav_inline {
+                display: inline-block;
+                margin-right: 0;
+
+
+                a.link {
+                    font-size: 14px;
+                    text-decoration: none;
+                    color: #232323;
+                    text-transform: uppercase;
+
+                    &:hover {
+                        color: #4E844A;
+                        text-decoration: underline;
+                    }
+                }
+
+
+                .font_custom {
+                    display: none;
+                }
+            }
+
+            li.social_inline {
+                display: inline-block;
+                margin-left: 0;
+            }
+        }
+    }
+
+    section.contact {
+        padding: 15px;
+    }
+
+
+
+    .panel_list_home {
+        img.bg_header {
+            display: none;
+        }
+
+        img.bg_header_mb {
+            display: block;
+        }
+
+        .content_banner {
+            top: 60px;
+
+            .content_banner_info {
+                width: 100%;
+                position: relative;
+                right: 0;
+                text-align: center;
+                margin: 0 auto;
+            }
+        }
+    }
+
+    .qr_container {
+        img.qr_img {
+            width: 70px;
+            height: 70px;
+            margin-right: 0px;
+            float: initial;
+        }
+    }
+
+    .pagination_setting {
+        bottom: 0 !important;
+    }
+
+    section.recommend {
+        padding: 15px 0;
+
+        .message_panel {
+            width: 95%;
+            position: relative;
+            margin: 0 auto;
+
+
+            &:after {
+                position: absolute;
+                right: -22px;
+                top: 6px;
+                content: "";
+                background: url(../images/asset1.png) top center no-repeat;
+                width: 150px;
+                height: 150px;
+                background-size: contain;
+            }
+
+            .message_info {
+                position: relative;
+                left: -40px;
+            }
+
+        }
+
+        .book_panel {
+            position: relative;
+            padding: 15px 10px 10px 10px;
+            width: 100%;
+            float: inherit;
+            height: auto;
+
+            .book_contain {
+                max-width: 100%;
+                height: auto;
+                margin-bottom: 30px;
+
+                .book_contain_left {
+                    width: 100%;
+                    float: inherit;
+                    text-align: center;
+
+                }
+
+                .book_contain_right {
+                    width: 100%;
+                    float: inherit;
+                }
+
+                .article_book_contain {
+                    position: relative;
+                    width: 100%;
+                    left: 0;
+                }
+
+                img.book_image {
+                    width: 50%;
+                }
+
+                p.article_text {
+                    margin-top: 10px;
+                }
+            }
+        }
+    }
+
+    .news_container {
+        max-width: 95%;
+        margin: 15px auto;
+    }
+
+    section.of_month {
+        padding: 0;
+
+        .of_month_panel {
+            width: 100%;
+            background-color: #f6f6f6;
+            position: relative;
+            padding-top: 30px;
+            padding-bottom: 15px;
+            z-index: 3;
+
+            h4.title {
+                margin-top: 30px;
+                text-align: center;
+            }
+
+            .more_btn_container {
+                float: inherit;
+                margin: 0 auto;
+            }
+
+            .of_month_container {
+                width: 100%;
+                max-width: 95%;
+                margin: 0 auto;
+            }
+        }
+    }
+
+    .bg_nature {
+        display: none;
+    }
+
+    section.chosen_book {
+        padding: 15px 0;
+
+        .chosen_book_container {
+            .best_panel {
+                h4.best_title {
+                    font-size: 16px;
+                    margin-bottom: 15px;
+                }
+
+                .best_image_contain {
+                    display: none;
+                }
+            }
+        }
+    }
+
+
+    .slider-produtos-wrap {
+        position: relative;
+        width: 85%;
+        margin: 0 auto;
+    }
+
+    section.top_view {
+        padding: 15px 0;
+
+        .book_of_month_panel {
+            .book_slide_card {
+                .mascot_bot {
+                    position: relative;
+                    width: 100%;
+                    padding: 0 0;
+                    margin-top: -10px;
+                    margin-bottom: 20px;
+
+
+                    .mascot_panel {
+                        width: 95%;
+                        margin: 0 auto;
+
+                        .mascot_info {
+                            padding-right: 25px;
+                        }
+
+                        .light_icon_set {
+                            left: 5px;
+                        }
+
+                        &:after {
+                            position: absolute;
+                            right: -19px;
+                            top: -12px;
+                            content: "";
+                            background: url(../images/asset2.png) top center no-repeat;
+                            width: 120px;
+                            height: 120px;
+                            background-size: contain;
+
+                        }
+                    }
+                }
+            }
+        }
+
+        .video_panel {
+            position: relative;
+            width: 100%;
+            background: #fff;
+            border-radius: 15px;
+            border: 1px solid #ccc;
+            padding: 20px;
+
+            .title_contain {
+
+                margin-top: -10px;
+
+                h4.title {
+
+                    text-align: center;
+
+                }
+
+                .more_btn_container {
+                    float: inherit;
+                    margin-top: 15px;
+                    margin-bottom: 10px;
+                }
+            }
+
+
+
+        }
+    }
+
+
+
+    footer {
+        padding-top: 0;
+    }
+
+    .footer_link_contain {
+        display: none;
+    }
+
+    p.footer_text {
+        margin-top: 0;
+
+    }
+
+    ul.footer_icon {
+
+        margin: 0;
+        padding-bottom: 60px;
+
+    }
+
+
+
+    .wrapper_content {
+
+
+        .panel_book {
+
+            max-width: 100%;
+
+            .book_view {
+                margin-top: 20px;
+            }
+
+            .book_card_view_contain {
+                p.book_name {
+                    padding: 0;
+                    font-size: 14px;
+                }
+            }
+        }
+    }
+
+    .video_content_panel {
+        max-width: 100%;
+    }
+
+    .wrapper_content {
+        margin: 25px 0 25px 0;
+    }
+
+    .video_list_block {
+        width: 100%;
+        margin: 30px 0 0 0;
+
+        article.tab_info {
+            .content_info {
+                padding-left: 0;
+                margin-top: 10px;
+
+                a.text_info {
+                    margin: 0 0 10px 0;
+                }
+            }
+        }
+    }
+
+    .container_details {
+
+        max-width: 100%;
+
+        .book_image_left {
+            margin: 0 auto;
+            text-align: center;
+            max-width: 80%;
+
+            .scan_qr {
+                left: -40px;
+                top: 30px;
+                width: 40px;
+                height: 40px;
+            }
+
+            img.book_image {
+                max-width: 100%;
+                margin: 0 auto;
+            }
+        }
+
+        .details_book_right_contain {
+            padding-left: 0;
+            margin-top: 20px;
+        }
+
+    }
+
+    .search_container {
+
+        max-width: 100%;
+
+        .mutimedia_link {
+            .mutimedia_content {
+                padding: 10px 0 0 0;
+
+                p.mutimedia_text {
+
+                    margin: 0 0 10px 0;
+                }
+            }
+        }
+    }
+
+    a.card_book_view {
+        .card_book_new {
+            top: -5px;
+            left: -7px;
+            width: 50px;
+            height: 50px;
+
+        }
+
+    }
+
+    ul.ribbon_float {
+
+
+        li {
+
+
+            .card_book_ribbon_s1 {
+                width: 20px;
+                height: 20px;
+
+            }
+
+            .card_book_ribbon_s2 {
+                width: 20px;
+                height: 20px;
+
+            }
+        }
+    }
+}
+
+
+
+
+
+
+
+/* Tablet desktop :768px. */
+@media only screen and (min-width: 769px) and (max-width: 1199px) {
+
+
+
+    .columns.is-reverse-mobile {
+        &.is-mobile {
+            flex-direction: column-reverse;
+            display: flex; // .is-mobile gives this too
+
+            .column {
+                // we want width to be 100%, this gives us the power of flex's ordering.
+                // ux behavior is same as before, except underneath the hood width fills
+                // 100% of the column instead of dropping flex in mobile
+                width: 100%;
+            }
+        }
+    }
+
+    nav.topnav {
+        padding: 0;
+    }
+
+    .user_info_mobile {
+
+        right: 15px;
+
+    }
+
+    .btn_user_info {
+        height: 30px;
+        line-height: 30px;
+        width: 100%;
+        font-size: 12px;
+        border-radius: 20px;
+    }
+
+    .container {
+        padding: 0 15px;
+    }
+
+    .logo {
+        width: 80%;
+        margin: 0;
+    }
+
+    nav.topnav {
+        .topnav_left {
+            display: none;
+        }
+
+        .topnav_right {
+            width: 100%;
+            float: initial;
+            text-align: center;
+        }
+
+        ul.contact {
+            text-align: left;
+
+            li.topnav_inline {
+                display: inline-block;
+                margin-right: 0;
+
+
+                a.link {
+                    font-size: 14px;
+                    text-decoration: none;
+                    color: #232323;
+                    text-transform: uppercase;
+
+                    &:hover {
+                        color: #4E844A;
+                        text-decoration: underline;
+                    }
+                }
+
+
+                .font_custom {
+                    display: none;
+                }
+            }
+
+            li.social_inline {
+                display: inline-block;
+                margin-left: 0;
+            }
+        }
+    }
+
+    section.contact {
+        padding: 15px;
+    }
+
+
+
+    .panel_list_home {
+        img.bg_header_mb {
+            display: none;
+        }
+    }
+
+    .panel_list_home .content_banner {
+        position: absolute;
+        right: 0;
+        top: 60px;
+        width: 100%;
+        text-align: right;
+        color: #fff;
+    }
+
+
+    .pagination_setting {
+        bottom: 0 !important;
+    }
+
+    section.recommend {
+        padding: 15px 0;
+
+        .message_panel {
+            width: 95%;
+            position: relative;
+            margin: 0 auto;
+
+
+            &:after {
+                position: absolute;
+                right: -22px;
+                top: 6px;
+                content: "";
+                background: url(../images/asset1.png) top center no-repeat;
+                width: 150px;
+                height: 150px;
+                background-size: contain;
+            }
+
+            .message_info {
+                position: relative;
+                left: -40px;
+            }
+
+        }
+
+        .book_panel {
+            position: relative;
+            padding: 15px 10px 10px 10px;
+            width: 100%;
+            float: inherit;
+            height: auto;
+
+            .book_contain {
+                max-width: 100%;
+                height: auto;
+                margin-bottom: 30px;
+
+                .book_contain_left {
+                    width: 50%;
+                    float: left;
+                    text-align: center;
+
+                }
+
+                .book_contain_right {
+                    width: 40%;
+                    float: left;
+                }
+
+                .article_book_contain {
+                    position: relative;
+                    width: 100%;
+                    left: 0;
+                }
+
+                img.book_image {
+                    width: 50%;
+                }
+
+                p.article_text {
+                    margin-top: 10px;
+                }
+            }
+        }
+    }
+
+    .news_container {
+        max-width: 95%;
+        margin: 15px auto;
+    }
+
+    section.of_month {
+        padding: 0;
+
+        .of_month_panel {
+            width: 100%;
+            background-color: #f6f6f6;
+            position: relative;
+            padding-top: 30px;
+            padding-bottom: 15px;
+            z-index: 3;
+
+            h4.title {
+                margin-top: 10px;
+                text-align: center;
+            }
+
+            .more_btn_container {
+                float: inherit;
+                margin: 0 auto;
+            }
+
+            .of_month_container {
+                width: 100%;
+                max-width: 95%;
+                margin: 0 auto;
+            }
+        }
+    }
+
+    .bg_nature {
+        display: none;
+    }
+
+    section.chosen_book {
+        padding: 15px 0;
+
+        .chosen_book_container {
+            .best_panel {
+                h4.best_title {
+                    font-size: 16px;
+                    margin-bottom: 15px;
+                }
+
+                .best_image_contain {
+                    display: none;
+                }
+            }
+        }
+    }
+
+    .slider-produtos-wrap {
+        position: relative;
+        width: 85%;
+        margin: 0 auto;
+    }
+
+    section.top_view {
+        padding: 15px 0;
+
+        .book_of_month_panel {
+            .book_slide_card {
+                .mascot_bot {
+                    position: relative;
+                    width: 100%;
+                    padding: 0 0;
+                    margin-top: -10px;
+                    margin-bottom: 20px;
+
+                    .mascot_panel {
+                        width: 95%;
+                        margin: 0 auto;
+
+                        &:after {
+                            position: absolute;
+                            right: -9px;
+                            top: 5px;
+                            content: "";
+                            background: url(../images/asset2.png) top center no-repeat;
+                            width: 100px;
+                            height: 100px;
+                            background-size: contain;
+                        }
+                    }
+                }
+            }
+        }
+
+    }
+
+
+
+    footer {
+        padding-top: 0;
+    }
+
+    #menu_mobile {
+        display: none;
+    }
+
+    .wrapper_content {
+
+
+        .panel_book {
+
+            max-width: 100%;
+
+
+
+            .book_card_view_contain {
+                p.book_name {
+                    padding: 0;
+                    font-size: 14px;
+                }
+            }
+        }
+    }
+
+    .wrapper_content {
+
+
+        .panel_book {
+
+            max-width: 100%;
+
+            .book_view {
+                margin-top: 20px;
+            }
+
+            .book_card_view_contain {
+                p.book_name {
+                    padding: 0;
+                    font-size: 14px;
+                }
+            }
+        }
+    }
+
+
+
+}
+
+@media (min-width: 1200px) {
+    .user_info_mobile {
+        display: none;
+    }
+
+    .panel_list_home {
+        img.bg_header {
+            display: block;
+        }
+
+        img.bg_header_mb {
+            display: none;
+        }
+    }
+
+    #menu_mobile {
+        display: none;
+    }
+}

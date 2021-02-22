@@ -1,0 +1,252 @@
+html,
+body {
+  width: 100%;
+  height: 100%;
+}
+body {
+  font-family: kanit;
+  font-size: 14px;
+  color: #232323;
+}
+.hide,
+.hidden {
+  display: none !important;
+}
+a {
+  cursor: pointer;
+  color: #000;
+}
+a:hover {
+  text-decoration: none;
+  color: #007bff;
+}
+.navbar-top {
+  padding: 0.3rem 0.7rem;
+  border-bottom: 1px solid rgba(0,0,0,0.04);
+}
+.navbar-top.navbar-light {
+  background-color: #59B27A;
+}
+.navbar-top .navbar-brand {
+  padding-top: 0;
+  padding-bottom: 0;
+}
+.navbar-top .navbar-brand .img-logo {
+  width: 40px;
+  height: 40px;
+}
+.navbar-top .navbar-brand .text {
+  font-size: 1.00rem;
+  margin-top: 0px;
+  color: #FFF;
+  font-weight: bold;
+  padding-top: 9px;
+  display: inline-block;
+}
+.form-control {
+  border-radius: 0 !important;
+}
+.content {
+  width: 100%;
+  height: calc(100% - 49px);
+}
+.row-c {
+  height: 100%;
+}
+.row-c .col-c {
+  height: 100%;
+}
+.col1 {
+  display: flex;
+  left: 0px;
+  flex: 0 0 350px;
+  max-width: 350px;
+  padding: 0px;
+}
+.col1 .col-menuleft {
+  flex: 0 0 50px;
+  max-width: 50px;
+  height: 100%;
+  background-color: #2F2F2F;
+  text-align: center;
+  padding: 10px 5px;
+}
+.col1 .col-menuleft .menu-left {
+  padding: 7px 5px;
+  display: inline-block;
+  text-align: center;
+  width: 100%;
+}
+.col1 .col-menuleft .menu-left .material-icons {
+  color: #fff;
+  opacity: 0.4;
+}
+.col1 .col-menuleft .menu-left.active .material-icons,
+.col1 .col-menuleft .menu-left:hover .material-icons {
+  opacity: 1;
+}
+.col1 .col-sidebar {
+  width: 350px;
+  height: 100%;
+  padding: 0px;
+  overflow: hidden;
+}
+.col1 .col-sidebar .sidebar-tab {
+  display: none;
+}
+.col1 .col-sidebar .sidebar-tab.active {
+  display: block;
+}
+.col1 .col-sidebar .sidebar-tab.tab2 {
+  padding: 5px;
+}
+.col1 .col-sidebar .layers-title {
+  padding: 7px 5px 7px 15px;
+  background-color: #ebebeb;
+  border-bottom: solid 1px #ccc;
+}
+.col1 .col-sidebar .layers-body {
+  padding: 5px;
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+.col1 .col-sidebar .card {
+  border-radius: 0px;
+  border: unset;
+}
+.col1 .col-sidebar .card .card-header {
+  background-color: unset;
+  padding: 5px 0px 1px;
+  border-bottom: unset;
+  display: flex;
+}
+.col1 .col-sidebar .card .card-header .btn-link {
+  padding: 0px 5px;
+  height: 24px;
+}
+.col1 .col-sidebar .card .card-header .icon-collapse {
+  font-size: 18px;
+  margin-top: 2px;
+  color: #166DBF;
+}
+.col1 .col-sidebar .card .card-header [aria-expanded="true"] .icon-collapse::before {
+  content: "\f07c";
+}
+.col1 .col-sidebar .card .card-header [aria-expanded="false"] .icon-collapse::before {
+  content: "\f65e";
+}
+.col1 .col-sidebar .card .card-body {
+  padding: 2px 2px 2px 50px;
+}
+.col1 .col-sidebar .card .card-body .chk-dl:checked + label {
+  color: #1A7BFF;
+}
+.col1 .col-sidebar .card .custom-control-label {
+  cursor: pointer;
+}
+.col1 .col-sidebar .card .custom-control-label::before {
+  border-radius: 0px;
+}
+.col1 .col-sidebar .show-map-type {
+  padding: 7px;
+}
+.col2 {
+  flex: 0 0 calc(100% - 350px);
+  max-width: calc(100% - 350px);
+  padding: 0px;
+}
+.col2 .col-map {
+  display: flex;
+  padding: 0px;
+}
+.col2 .col-map #map-content {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+.col2 .col-map #map-content #map {
+  width: 100%;
+  height: 100%;
+  background-color: #f1f1f1;
+}
+.col2 .col-map #map-content #map .ol-control button.active {
+  background-color: #00F;
+  border: none;
+}
+.col2 .col-map #show-table-data {
+  display: none;
+  height: 30%;
+  background-color: #f1f1f1;
+  padding: 5px;
+}
+.col2 .col-map #show-table-data .nav-link {
+  display: block;
+  padding: .1rem 0.5rem;
+}
+.col2 .col-map #show-table-data .nav-link .close {
+  font-size: 16px;
+  margin-top: 2px;
+  margin-left: 4px;
+}
+.col2 .col-map #show-table-data .tab-content {
+  padding: 4px;
+  background-color: #fff;
+  font-size: 12px;
+  overflow-x: auto;
+  overflow-y: auto;
+}
+.col2 .col-map #show-table-data .table-responsive {
+  background-color: #FFF;
+}
+.col2 .col-map #show-table-data .table-responsive .table th,
+.col2 .col-map #show-table-data .table-responsive .table td {
+  padding: 1px .25rem !important;
+  font-size: 12px;
+}
+.col2 .col-map #show-table-data .table-responsive .table th a:hover,
+.col2 .col-map #show-table-data .table-responsive .table td a:hover {
+  color: #00f;
+}
+.col2 .col-map #show-table-data .data-empty {
+  padding: 40px 20px 10px;
+  text-align: center;
+}
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+input[type="number"] {
+  -moz-appearance: textfield;
+}
+.box {
+  min-width: 165px;
+  border: solid 1px #fff;
+  margin: 10px;
+  padding: 20px;
+  border-radius: 15px;
+  text-align: center;
+}
+.box .title {
+  font-size: 20px;
+}
+.box .num {
+  font-weight: bold;
+  font-size: 25px;
+}
+.box .sub_num {
+  font-size: 15px;
+  color: #00f;
+}
+.box1 {
+  background-color: #FDD955;
+}
+.box2 {
+  background-color: #F26F61;
+}
+.box3 {
+  background-color: #69C6FF;
+}
+.box4 {
+  background-color: #38D68B;
+}

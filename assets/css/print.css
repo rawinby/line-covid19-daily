@@ -1,0 +1,26 @@
+.printarea {
+  width: 297mm;
+  height: 200mm;
+  position: absolute;
+  top: 0;
+  left: 0;
+  margin-left: calc(50% - 148.5mm);
+  display: none;
+}
+@media print {
+  .printarea {
+    display: block;
+  }
+  @page {
+    size: A4 landscape;
+    margin-top: 1cm;
+    margin-right: 1cm;
+    margin-bottom: 1cm;
+    margin-left: 1cm;
+  }
+  .navbar,
+  .col1,
+  .col-sidebar {
+    display: none;
+  }
+}

@@ -1,0 +1,155 @@
+.ol-control .material-icons {
+  font-size: 22px;
+}
+.ol-home {
+  top: 4.4em;
+  left: .5em;
+}
+.ol-home button {
+  fill: #fff;
+}
+.ol-zoomin {
+  left: .5em;
+  bottom: .5em;
+}
+.ol-zoomin button {
+  fill: #fff;
+}
+.ol-zoomout {
+  left: 2.8em;
+  bottom: .5em;
+}
+.ol-zoomout button {
+  fill: #fff;
+}
+.ol-b1 {
+  left: 5em;
+  bottom: .5em;
+}
+.ol-b1 button {
+  fill: #fff;
+}
+.ol-b2 {
+  left: 7.2em;
+  bottom: .5em;
+}
+.ol-b2 button {
+  fill: #fff;
+}
+.ol-b3 {
+  left: 9.4em;
+  bottom: .5em;
+}
+.ol-b3 button {
+  fill: #fff;
+}
+.ol-b4 {
+  left: 11.6em;
+  bottom: .5em;
+}
+.ol-b4 button {
+  fill: #fff;
+}
+.ol-table {
+  right: 0.5em;
+  bottom: .5em;
+}
+.ol-table button {
+  fill: #fff;
+}
+.ol-tooltip {
+  position: relative;
+  background: rgba(0,0,0,0.5);
+  border-radius: 4px;
+  color: white;
+  padding: 4px 8px;
+  opacity: 0.7;
+  white-space: nowrap;
+  font-size: 12px;
+}
+.ol-tooltip-measure {
+  opacity: 1;
+  font-weight: bold;
+}
+.ol-tooltip-static {
+  background-color: #ffcc33;
+  color: black;
+  border: 1px solid white;
+}
+.ol-tooltip-measure:before,
+.ol-tooltip-static:before {
+  border-top: 6px solid rgba(0,0,0,0.5);
+  border-right: 6px solid transparent;
+  border-left: 6px solid transparent;
+  content: "";
+  position: absolute;
+  bottom: -6px;
+  margin-left: -7px;
+  left: 50%;
+}
+.ol-tooltip-static:before {
+  border-top-color: #ffcc33;
+}
+.myDragBox {
+  border: solid 2px #3366CC;
+  background-color: rgba(255,255,255,0.2);
+}
+.popover {
+  max-width: unset;
+  min-width: 270px;
+  min-height: 200px;
+  z-index: 1;
+  padding: 0px;
+  margin-top: -188px;
+  margin-left: -128px;
+  border-radius: 0px;
+}
+.popover .arrow {
+  left: calc(50% - 8px);
+}
+.popover .link {
+  cursor: pointer;
+}
+.popover .infowindow-content .form-control-sm {
+  font-size: .775rem;
+}
+.popover .infowindow-content .infowindow-close {
+  float: right;
+}
+.popover .infowindow-content .infowindow-title {
+  display: inline-block;
+  width: 100%;
+  padding: 2px 5px;
+}
+.popover .infowindow-content .infowindow-body {
+  display: inline-block;
+  width: 100%;
+  padding: 2px 7px 2px;
+  min-height: 70px;
+  height: 135px;
+  overflow-x: hidden;
+  overflow-y: scroll;
+  font-size: 12px;
+}
+.popover .infowindow-content .infowindow-body .table {
+  margin-bottom: 5px;
+}
+.popover .infowindow-content .infowindow-body .table tr th {
+  padding: 0px !important;
+}
+.popover .infowindow-content .infowindow-body .table tr td {
+  padding: 0px !important;
+  word-break: break-all !important;
+}
+.popover ::-webkit-scrollbar {
+  width: 10px;
+}
+.popover ::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+.popover ::-webkit-scrollbar-thumb {
+  background: #888;
+}
+.popover ::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}

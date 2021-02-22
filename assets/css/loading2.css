@@ -1,0 +1,10 @@
+
+/* http://ajaxloadingimages.net/svg */
+.preload2 {
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 0px;
+    right: 2px;
+    z-index: 26;
+}
+
