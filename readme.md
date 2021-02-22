@@ -1,4 +1,4 @@
-# Frontend-Geoserver
+# line-covid19-daily
 
 
 - How To Run
@@ -9,5 +9,4 @@
 		chmod +x bin/* (first time)
 		bin/start OR bin/restart
 		bin/stop
-		````# line-covid19-daily
-# line-covid19-daily
+		````
