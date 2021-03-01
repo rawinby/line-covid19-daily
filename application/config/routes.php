@@ -51,7 +51,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 */
 // https://codeigniter.com/userguide3/general/routing.html
 
-$route['default_controller'] = 'Frontend/home';
+$route['default_controller'] = 'Frontend/stat';
 $route['home'] = 'Frontend/home';
 $route['webhook-line-official'] = 'Webhook/webhook_line_official';
 $route['send-covid19'] = 'Webhook/send_covid19';

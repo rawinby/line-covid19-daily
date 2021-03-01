@@ -9,22 +9,10 @@ class Frontend extends CI_Controller {
 
 	public function stat()
 	{	
-		$getApi['url'] = 'https://covid19.th-stat.com/api/open/today';
-		$getApi['token'] = "";
-		$res_covid = json_decode(getData($getApi),true);
-
-		// var_dump(
-		// 	$res_covid
-		// );
-
 		$data = array();
 		//---
-		$ud_dt = explode(' ', $res_covid['UpdateDate']);
-		$ud_d_en = substr($ud_dt[0],6,4).'-'.substr($ud_dt[0],3,2).'-'.substr($ud_dt[0],0,2);
-		$ud_dt_en = substr($ud_dt[0],6,4).'-'.substr($ud_dt[0],3,2).'-'.substr($ud_dt[0],0,2).' '.$ud_dt[1];
-		$data['res_covid'] = $res_covid;
-		$data['update_date'] = $ud_dt_en;
-		
+		$query = $this->db->query('SELECT * FROM covid19_stat ORDER BY id DESC LIMIT 1 ');
+		$data['f'] = $query->row_array();
 		
 		$this->template_frontend->view('covid-stat', $data);
 		

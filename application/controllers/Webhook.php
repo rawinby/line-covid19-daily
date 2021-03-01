@@ -52,9 +52,11 @@ class Webhook extends CI_Controller {
 				$this->db->insert('covid19_user_line',$data);
 			}else{
 				$this->db->update('covid19_user_line', [
-					'status' => 1,
+					'user_id' => $userId,
+					'display_name' => $res_profile['displayName'],
 					'picture_url' => $res_profile["pictureUrl"],
 					'status_message' => $res_profile["statusMessage"],
+					'status' => 1,
 					'update_datetime' => date('Y-m-d H:i:s')
 				],
 				['user_id' => $userId]);
@@ -102,20 +104,21 @@ class Webhook extends CI_Controller {
 		$ud_dt_en = substr($ud_dt[0],6,4).'-'.substr($ud_dt[0],3,2).'-'.substr($ud_dt[0],0,2).' '.$ud_dt[1];
 
 		echo 'วันที่ปัจจุบัน: '.date('Y-m-d'); echo '<br>';		
-		echo 'วันที่จาก Api: '.$ud_d_en; echo '<br>';
+		echo 'วันที่จาก Api: '.$ud_dt_en; echo '<br>';
+		// exit;
 
-		if(date('Y-m-d') == $ud_d_en){
+		$force = (isset($_GET['force']) && $_GET['force']) ? $_GET['force'] : 0;
+		if(date('Y-m-d') == $ud_d_en || $force == 1){
 
 			$query = $this->db->query('SELECT * FROM covid19_stat WHERE DATE(UpdateDate) = "'. $ud_d_en .'" ');
 			if($query->num_rows() > 0){
 				echo 'มีข้อมูลแล้ว '. $ud_d_en;
 				exit;
-
 			}
 
 			// 21/02/2021
-			$query = $this->db->query('SELECT * FROM covid19_stat WHERE DATE(UpdateDate) = "'. $ud_d_en .'" ');
-			if($query->num_rows() == 0){ //ถ้ามีข้อมูลแล้ว
+			$query2 = $this->db->query('SELECT * FROM covid19_stat WHERE DATE(UpdateDate) = "'. $ud_d_en .'" ');
+			if($query2->num_rows() == 0){ //ถ้ามีข้อมูลแล้ว
 				$data_insert = [
 					'NewConfirmed' => $res_covid['NewConfirmed'],
 					'Confirmed' => $res_covid['Confirmed'],
@@ -126,16 +129,16 @@ class Webhook extends CI_Controller {
 					'Recovered' => $res_covid['Recovered'],
 					'NewRecovered' => $res_covid['NewRecovered'],
 					'UpdateDate' => $ud_dt_en,
-					'create_datetime' => date('Y-m-d H:i:s')
+					'create_datetime' => $ud_dt_en
 				];
 				$this->db->insert('covid19_stat',$data_insert);
 			}
 
 
-			$query = $this->db->query('SELECT user_id FROM covid19_user_line WHERE status = 1');
+			$query3 = $this->db->query('SELECT user_id FROM covid19_user_line WHERE status = 1');
 			$to_txt = "[";
 			$n = 0;
-			foreach($query->result_array() as $row){
+			foreach($query3->result_array() as $row){
 				if($n > 0){
 					$to_txt .= ",";
 				}
@@ -156,7 +159,7 @@ class Webhook extends CI_Controller {
 							"hero": {
 								"type": "box",
 								"layout": "vertical",
-								"paddingTop": "17px",
+								"paddingTop": "25px",
 								"contents": [
 									{
 										"type": "text",
@@ -170,12 +173,13 @@ class Webhook extends CI_Controller {
 										"type": "text",
 										"text": "อัพเดทล่าสุด '. DateThai($ud_dt_en) .' น.",
 										"color": "#111111",
+										"weight": "bold",
 										"align": "center",
 										"size": "md"
 									},
 									{
 										"type": "image",
-										"url": "https://obs.line-scdn.net/0h2CfNgc0GbWxbN3s7h0oSO2dyYwEsGWskIwZwDHc3MQlzBSk_NVJ3Dn81YFt2Bi9qY1gmXS0xMVVz",
+										"url": "https://img.freepik.com/free-vector/covid-19-coronavirus-background-with-realistic-virus-cells_7714-692.jpg",
 										"size": "full",
 										"aspectRatio": "5:1",
 										"aspectMode": "cover"
@@ -197,8 +201,8 @@ class Webhook extends CI_Controller {
 												"type": "box",
 												"layout": "vertical",
 												"borderWidth": "medium",
-												"backgroundColor": "#FFD657",
-												"borderColor": "#FFD657",
+												"backgroundColor": "#FFE098",
+												"borderColor": "#FFE098",
 												"paddingAll": "4px",
 												"cornerRadius": "5px",
 												"contents": [
@@ -229,8 +233,8 @@ class Webhook extends CI_Controller {
 												"type": "box",
 												"layout": "vertical",
 												"borderWidth": "medium",
-												"backgroundColor": "#F5655A",
-												"borderColor": "#F5655A",
+												"backgroundColor": "#FF948D",
+												"borderColor": "#FF948D",
 												"paddingAll": "4px",
 												"cornerRadius": "5px",
 												"contents": [
@@ -253,7 +257,7 @@ class Webhook extends CI_Controller {
 														"align": "center",
 														"size": "xs",
 														"color": "#0000ff",
-														"text": "'. ($res_covid['NewDeaths'] != 0 ? ($res_covid['NewDeaths'] > 0 ? 'เพิ่มขึ้น ' : 'ลดลง ') . str_replace('-','', number_format($res_covid['NewDeaths'])) : '-') .'"
+														"text": "'. ($res_covid['NewDeaths'] != 0 ? ($res_covid['NewDeaths'] > 0 ? 'เพิ่มขึ้น ' : 'ลดลง ') . str_replace('-','', number_format($res_covid['NewDeaths'])) : 'คงที่ '. number_format($res_covid['NewDeaths'])) .'"
 													}
 												]
 											}
@@ -268,8 +272,8 @@ class Webhook extends CI_Controller {
 												"type": "box",
 												"layout": "vertical",
 												"borderWidth": "medium",
-												"backgroundColor": "#55BEFF",
-												"borderColor": "#55BEFF",
+												"backgroundColor": "#92DFFF",
+												"borderColor": "#92DFFF",
 												"paddingAll": "4px",
 												"cornerRadius": "5px",
 												"contents": [
@@ -300,8 +304,8 @@ class Webhook extends CI_Controller {
 												"type": "box",
 												"layout": "vertical",
 												"borderWidth": "medium",
-												"backgroundColor": "#00D284",
-												"borderColor": "#00D284",
+												"backgroundColor": "#A3F2C6",
+												"borderColor": "#A3F2C6",
 												"paddingAll": "4px",
 												"cornerRadius": "5px",
 												"contents": [
@@ -338,18 +342,14 @@ class Webhook extends CI_Controller {
 								"layout": "vertical",
 								"contents": [
 									{
-										"type": "text",
-										"color": "#999999",
-										"align": "center",
-										"size": "sm",
-										"text": "ข้อมูลจาก: กรมควบคุมโรค"
-									},
-									{
-										"type": "text",
-										"color": "#999999",
-										"align": "center",
-										"size": "sm",
-										"text": "Dev by: Rawin.co"
+										"type": "button",
+										"action": {
+											"type": "uri",
+											"label": "Dev by: Rawin.co",
+											"uri": "https://rawin.co"
+										},
+										"style": "link",
+										"color": "#999999"
 									}
 								]
 							}

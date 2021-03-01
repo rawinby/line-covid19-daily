@@ -19,11 +19,11 @@
     <meta property="og:image:width" content="700" />
     <meta property="og:image:height" content="500" />
     <title><?php echo $page_title;?></title>
-    <link rel="shortcut icon" href="<?php echo base_url('assets/images/logo.png');?>">
+    <link rel="shortcut icon" href="<?php echo base_url('assets/images/logo.jpg');?>">
     <link rel="stylesheet" type="text/css" href="<?php echo base_url('assets/css/fontawesome-all.css');?>">
     <link rel="stylesheet" type="text/css" href="<?php echo base_url('assets/css/font-material-icon.css');?>">
-    <!-- <link rel="stylesheet" type="text/css" href="<?php echo base_url('assets/fonts/helvetica/helvetica.css');?>"> -->
     <link rel="stylesheet" type="text/css" href="<?php echo base_url('assets/css/font-kanit.css');?>">
+    <link rel="stylesheet" type="text/css" href="<?php echo base_url('assets/fonts/sukhumvit/sukhumvit.css');?>">
     <link rel="stylesheet" type="text/css" href="<?php echo base_url('assets/css/bootstrap.min.css');?>">
     <link rel="stylesheet" type="text/css" href="<?php echo base_url('assets/css/loading.css');?>">
     <link rel="stylesheet" type="text/css" href="<?php echo base_url('assets/css/loading2.css');?>">

@@ -4,9 +4,11 @@ body {
   height: 100%;
 }
 body {
-  font-family: kanit;
+  font-family: 'kanit';
   font-size: 14px;
   color: #232323;
+  letter-spacing: 0rem;
+  word-spacing: 0rem;
 }
 .hide,
 .hidden {
@@ -220,9 +222,9 @@ input[type="number"] {
   -moz-appearance: textfield;
 }
 .box {
-  min-width: 165px;
+  min-width: 160px;
   border: solid 1px #fff;
-  margin: 10px;
+  margin: 5px;
   padding: 20px;
   border-radius: 15px;
   text-align: center;
